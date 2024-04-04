@@ -11,7 +11,7 @@ nstat IpInReceives >/dev/null 2>&1
 while true; do
 
     # Wait for 60 seconds
-    sleep 10
+    sleep 60
 
     # Determine the number of incoming IP packets in the last 60 seconds
     packetsIn=$(nstat | grep 'IpInReceives' | awk '{print $2}')
